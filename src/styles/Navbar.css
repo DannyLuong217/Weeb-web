@@ -1,55 +1,73 @@
 .Navbar {
-  margin: 0;
-  padding: 0;
-  height: 10vh;
-
+    margin: 0;
+    padding: 0;
+    height: 8rem;
 }
+
 .Navbardetail {
-  max-width:1200px;
-  height:100%;
-  margin: 0 auto;
-  display:flex;
-  /* justify-content:space-between; */
-}
-.Navbar_Logo{
-  width:40%;
-  height: auto;
-  display:flex;
- 
-}
-.Navbar_Detail {
-  width:60%;
-  height: auto;
-  display:flex;
- 
-}
-.Navbar_Logo > img {
-  max-width:100%;
-  height: 10vh;
+    /*Nav-container*/
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    background-color: rgb(164, 164, 216);
+    /* justify-content:space-between; */
 }
 
-.MarginCenterProp {
-  width:100%;
-  margin:auto;
+.Navbar_Logo {
+    width: 15%;
+    height: auto;
+    display: flex;
+    background-color: blueviolet;
 }
+
+.Navbar_Detail {
+    width: 85%;
+    height: auto;
+    display: flex;
+    background-color: antiquewhite;
+}
+
+.Navbar_Logo>img {
+    max-width: 100%;
+    height: 10vh;
+}
+
+.Navbar_Detail>.MarginCenterProp {
+    /*Hero section*/
+    width: 100%;
+    margin: auto;
+    background-color: chartreuse;
+}
+
 .NavbarMenu {
-  display:flex;
-  justify-content:space-between;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(157, 12, 12);
+    margin: 0rem 2rem 0rem 2rem;
 }
+
 .ListItemMenu {
-  display:flex;
-  padding:0;
+    display: flex;
+    height: relative;
+    background-color: chocolate;
 }
-.ItemMenu,.ButtonContactNavMenu {
-  display:block;
-  padding: 0 2rem;
- 
+
+.ItemMenu {
+    display: block;
+    cursor: pointer;
+    background-color: rgb(164, 164, 216);
 }
+
 .ButtonContactNavMenu {
-  background-color:var(--black);
-  border-radius: 5px;
-  color: var(--text-white);
-  font-size: var(--fz-text-btn);
-  font-weight:bold;
+    display: block;
+    padding: 0 2rem;
 }
- 
+
+.ButtonContactNavMenu {
+    background-color: var(--black);
+    border-radius: 15px;
+    color: var(--text-white);
+    font-size: var(--fz-text-btn);
+    font-weight: bold;
+}
