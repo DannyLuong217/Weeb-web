@@ -1,115 +1,148 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@font-face {
+    font-family: h2Font;
+    src: url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+    font-weight: bold;
+    }
+
 .BANNER {
-    width: 100%;
-    height: 90vh;
-    background-color: RGB(39, 39, 39);
+    width:100%;
+    height:1000px;
+    background-color:RGB(39, 39, 39);
 }
-
-.Bannerdetail,
-.Aboutdetail {
-    max-width: 1200px;
+.Bannerdetail,.Aboutdetail {
+    max-width:1200px;
     margin: 0 auto;
-    display: flex;
+    display:flex;
 }
-
 .BannerItem {
-    width: 50%;
-    height: 90vh;
-    display: flex;
+    width:50%;
+    height:90vh;
+    display:flex;
 }
-
-.BannerItem>img {
-    display: block;
+.BannerItem >img {
+    display:block;
     margin: auto;
 }
-
 .FormBanner {
     height: 30vh;
     color: #fff;
     margin: auto;
     padding: 0 60px;
-    border-radius: 10px;
-    display: flex;
-    width: 100%;
-    background-color: #313131;
+    border-radius: 18px;
+    display:flex;
+    width:100%;
+    background-color:#313131;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
-
 .MarginCenterProp {
-    width: 100%;
-    margin: auto;
+    width:100%;
+    margin:auto;
 }
-
 .ButtonContactBanner {
-    width: 150px;
+    width:150px;
     padding: 10px 20px;
     margin-right: 20px;
     font-weight: bold;
     border-radius: 5px;
+    margin-top: 1.5rem;
 }
-
 .abx {
-    background-color: #fafafa;
+    background-color:#fafafa;
     color: #313131;
 }
-
 .aby {
-    background-color: #313131;
-    border: 1px solid #fafafa;
+    background-color:#313131;
+    border : 1px solid #fafafa;
     color: #fafafa;
 }
-
 .ABOUTWEEB {
-    height: 60vh;
+    height: 888px; /* 19/3/2022*/
+    display:flex;
 }
-
-.Aboutdetail {
+.ABOUTWEEB>.Aboutdetail {
+    /*display:flex;
+    flex-wrap:wrap;*/
+    display: grid; /*dùng grid sẽ lockddc column và ko bị ảnh hưởng bởi object bên trong nó ->lock format as column (specify size) */
+    grid-template-columns: 7fr 3fr;
     max-width: 1200px;
     margin: 0 auto;
+    align-items: center;
+}
+.AboutItem01,.boxLeft {
+    width: 100%;
+}
+.AboutItem02,.boxRight {
+    width: 100%;
+    margin-left: 1rem;
+}
+/*.AboutItem02>.MarginCenterProp {
+    
+}*/
+h2 {
+    font-size: 3rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin:0%;
+    letter-spacing: 0.1rem;
+}
+#brand {
+    letter-spacing: 0.3rem;
 }
 
-.AboutItem01 {
-    width: 70%;
+.ButtonContactBanner.abtw {
+    background-color: transparent;
+    margin-top: 1.5rem;
 }
 
-.AboutItem02 {
-    width: 30%;
-}
-
-.AboutItem01,
-.AboutItem02 {
+.AboutItem01,.AboutItem02 {
     height: auto;
-    display: flex;
+    display:flex;
+}
+
+body>h2 {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    opacity: 0.6;
+    padding: 1rem;
+    text-align: center;
 }
 
 .ABOUTSERVICES {
+    display: flex;
     width: 100%;
-    height: auto;
-}
+    height: 666px;
 
+}
 .Aboutservicesdetail {
     max-width: 1200px;
     margin: 0 auto;
-    display: flex;
+    display: grid;
+    grid-template-columns: 3fr 7fr;
     justify-content: center;
+    align-items: center;
 }
-
 .AboutservicesItem01 {
-    width: 25%;
-    display: flex;
+    /*border-right:1px solid gray;*/
+    width: 100%;
+    display:flex;
 }
-
-.ahu>h3 {
+.ahu >h3 {
     border-bottom: 1px solid gray;
     margin-right: 1rem;
     text-align: right;
 }
-
 .AboutservicesItem02 {
-    width: 50%;
-    display: flex;
+    width: 100%;
+    display:flex;
+}
+.AboutservicesItem02 >img {
+    height: 100%;
+    margin: auto;
 }
 
-.AboutservicesItem02>img {
-    height: 300px;
-    margin: auto;
+
+.SLIDERPARTNER {
+    height: 208px; /* cho = vs slider2bar*/
 }
