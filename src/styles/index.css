@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Montserrat:wght@500&family=Quicksand:wght@600&display=swap');
+
+/* Font  */
+
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color: white;
 }
 
 code {
@@ -16,6 +21,6 @@ code {
 }
 
 .btn-ramdom {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     color: var(--black);
 }
